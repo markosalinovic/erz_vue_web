@@ -1,0 +1,83 @@
+.main-hero
+  position: relative
+  z-index: 1
+  min-height: 90vh
+  background-image: url('./assets/images/bg.jpg')
+  background-size: cover
+  background-attachment: fixed
+  background-position: center
+  display: grid
+  grid-template-columns: 5% 1fr 1fr 5%
+  color: white
+  font-family: 'Teko', sans-serif
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #2a2c30
+    opacity: 0.95
+    z-index: -1
+
+.left
+  grid-column: 2
+  justify-self: center
+  align-self: center
+  h1
+    padding: 1rem 0
+    font-size: 2.8rem
+    color: $color3
+    .logo-span1
+      color: white
+    .logo-span2
+      color: #aeaeae
+
+  p
+    padding: 1rem 0
+    line-height: 1.2
+    font-size: 1.55rem
+
+.right
+  justify-self: center
+  align-self: center
+  img
+    width: 60%
+    display: block
+    margin: auto
+
+@media screen and ( max-width: 960px )
+  .main-hero
+    grid-template-columns: 5% 1fr 5%
+    text-align: center
+    min-height: 100vh
+    .btn
+      margin-top: 3em
+
+  .right
+    display: none
+
+.hero
+  position: relative
+  z-index: 1
+  background-image: url('./assets/images/bg2.jpg')
+  background-size: cover
+
+  background-position: center
+  min-height: 40vh
+  display: flex
+  align-items: center
+  justify-content: center
+  color: white
+  font-family: 'Teko', sans-serif
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #2a2c30
+    opacity: 0.95
+    z-index: -1

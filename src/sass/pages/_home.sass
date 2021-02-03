@@ -1,0 +1,60 @@
+.partner-logo
+  width: 150px
+  grid-column: 3
+
+.partners
+  min-height: 10vh
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background-color: #222429
+  color: #aeaeae
+  padding: 1rem 5%
+
+.partners-title  h1
+  font-size: 1.8rem
+
+.partners-content
+  display: flex
+  align-content: space-between
+
+.partner-link a
+  font-size: 1.7em
+  letter-spacing: 1px
+  color: $color3
+  padding-left: .6em
+
+@media screen and ( max-width: 560px )
+  .partners
+    flex-direction: column
+    justify-content: space-around
+    padding-left: 0
+
+  .partners-content
+    align-content: space-around
+
+  .event-next-content
+    flex-direction: column
+
+.event-next
+  background-color: #f5f5f5
+  padding: 2rem 0
+  margin: 0 auto
+  h1
+    text-align: center
+    font-size: 1.8rem
+    padding: 2rem
+
+.event-next-content
+  display: flex
+  justify-content: center
+
+.event
+  background-color: white
+  padding: 1rem
+  margin: .3em 1em
+  border-radius: 10px
+
+.event-image
+  max-width: 100%
+  height: auto

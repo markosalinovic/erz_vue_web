@@ -1,0 +1,24 @@
+footer
+    position: relative
+    z-index: 10
+    background-image: url('./assets/images/bg.jpg')
+    background-size: cover
+    background-attachment: fixed
+    background-position: center
+    display: grid
+    grid-template-columns: 1fr
+    color: white
+    font-family: 'Teko', sans-serif
+    font-size: 1.4em
+    text-align: center
+    padding: .7em
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: #2a2c30
+        opacity: 0.95
+        z-index: -1
